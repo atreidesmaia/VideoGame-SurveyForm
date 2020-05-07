@@ -1,0 +1,31 @@
+/* ***************
+Basic setting
+*************** */
+
+html{}
+
+body{}
+
+main{}
+
+/* ***************
+ids
+*************** */
+
+#title{}
+
+#description{}
+
+/* ***************
+Survey
+*************** */
+
+#survey-form{}
+
+#name{}
+
+#email{}
+
+#number{}
+
+/* validation error x 2*/
