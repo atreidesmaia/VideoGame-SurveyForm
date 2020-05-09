@@ -2,30 +2,135 @@
 Basic setting
 *************** */
 
-html{}
+/* Data for survey from
+https://www.idtech.com/blog/different-types-of-video-game-genres
+*/
 
-body{}
+/* Background picture of Chrono Cross from
+https://imgur.com/a/7E4oK#0
+*/
 
-main{}
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap');
+
+html{
+  /***************/
+  font-size: 62.5%;
+  /* default 16px,
+  fontsize 62.5%
+  10px = 1 rem */
+  /***************/
+  font-family: 'Rokkitt', serif;
+  font-size: 1.25rem;
+  color: white;
+}
+
+body{
+  /***************/
+  /* image will fit to body,
+  margin 0 */
+  /***************/
+  margin: 0;
+  /** scroll x hidden **/
+  overflow-x: hidden;
+}
+
+#background-chronocross-img{
+  background-image: url(http://drive.google.com/uc?export=view&id=14gTNsRyURqsIDS47e7iCMBEKNbem2uLX);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Div over image so it overlays it */
+#overlay-color{
+  background: rgba(240, 52, 52, 0.2);
+}
+
+main{
+  /* main box set in the middle */
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+header{
+  padding: 55px 0;
+  text-align: center;
+}
 
 /* ***************
-ids
+        ids
 *************** */
 
-#title{}
+#title{
+  font-weight: 700;
+}
 
-#description{}
+#description-halfOpacity{
+  display: inline-block; /* background color
+  will adapt to the text line */
+  padding: 30px;
+  text-align:center;
+  background-color:rgba(150, 52, 52, 0.1);
+  border-radius: 15px 50px;
+  margin: 0;
+}
 
 /* ***************
-Survey
+      Survey
 *************** */
 
-#survey-form{}
+.form-box{ /* div class form */
+  background:rgba(192,192,192,0.3) ;
+  border-radius: 0.5rem;
+  text-align: left;
+  padding: 30px;
 
-#name{}
+}
 
-#email{}
+select{
+  font-family: inherit;
+  font-size: inherit;
+  width: 180px;
+  height: 25px;
+}
 
-#number{}
+input[type="text"], input[type="email"], input[type="number"]{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0 10px 9px;
+  margin: 8px 0 22px 0;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+textarea{
+  font-family: inherit;
+  font-size: inherit;
+  box-sizing: border-box;
+  margin: 0 auto;
+  resize: vertical;
+  height: 100px;
+}
+
+textarea, button{
+  display: block;
+  width: 100%;
+}
+
+input{
+  font-size: 0.8rem;
+}
+
+button{
+  background-color: lightblue;
+  border: none;
+  margin: 20px 0;
+  padding: 20px 0;
+}
+
 
 /* validation error x 2*/
