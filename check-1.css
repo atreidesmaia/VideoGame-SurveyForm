@@ -15,6 +15,7 @@ https://imgur.com/a/7E4oK#0
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap');
 
 html{
+  background-color:#EADAD3;
   /***************/
   font-size: 62.5%;
   /* default 16px,
@@ -22,11 +23,13 @@ html{
   10px = 1 rem */
   /***************/
   font-family: 'Rokkitt', serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: white;
+  background-color: black;
 }
 
 body{
+
   /***************/
   /* image will fit to body,
   margin 0 */
@@ -42,21 +45,18 @@ body{
   background-repeat: no-repeat;
 }
 
-/* Div over image so it overlays it */
-#overlay-color{
-  background: rgba(240, 52, 52, 0.2);
-}
-
 main{
   /* main box set in the middle */
   display: block;
   margin: 0 auto;
   width: 500px;
+
 }
 
 header{
   padding: 55px 0;
   text-align: center;
+  
 }
 
 /* ***************
@@ -65,71 +65,33 @@ header{
 
 #title{
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 #description-halfOpacity{
   display: inline-block; /* background color
   will adapt to the text line */
-  padding: 30px;
+  padding: 10px;
   text-align:center;
-  background-color:rgba(150, 52, 52, 0.1);
+  background-color:rgba(192,192,192,0.3);
   border-radius: 15px 50px;
-  margin: 0;
 }
 
 /* ***************
       Survey
 *************** */
 
-.form-box{ /* div class form */
-  background:rgba(192,192,192,0.3) ;
-  border-radius: 0.5rem;
-  text-align: left;
-  padding: 30px;
+.form-box{
+  background: rgba(0, 100, 155, 0.5);
+  text-align: right;
+  padding: 20px;
 }
 
-select{
-  font-family: inherit;
-  font-size: inherit;
-  width: 180px;
-  height: 25px;
-}
 
 input[type="text"], input[type="email"], input[type="number"]{
-  box-sizing: border-box;
   width: 100%;
-  padding: 10px 0 10px 9px;
-  margin: 8px 0 22px 0;
-  border: none;
-  border-radius: 3px;
-  font-family: inherit;
-  font-size: inherit;
-}
-
-textarea{
-  font-family: inherit;
-  font-size: inherit;
+  padding: 5px 5px;
   box-sizing: border-box;
-  margin: 0 auto;
-  resize: vertical;
-  height: 100px;
 }
-
-textarea, button{
-  display: block;
-  width: 100%;
-}
-
-input{
-  font-size: 0.8rem;
-}
-
-button{
-  background-color: lightblue;
-  border: none;
-  margin: 20px 0;
-  padding: 20px 0;
-}
-
 
 /* validation error x 2*/
