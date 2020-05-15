@@ -23,7 +23,7 @@
       <div class="form-box">
         <form>
 
-          <label id="name-label" for="name" class="format-label">Name</label>
+          <label id="name-label" for="name">Name</label>
             <input
               type="text"
               id="name"
@@ -57,9 +57,9 @@
               </select>
 
             <p>Have you ever heard about Abandonware?</p>
-
-              <input id="abandonware_yes" type="radio"
-              value="abandonware_yes" name="abandonware"> Hell yeah!</label>
+            <div class="container">
+              <label><input id="abandonware_yes" type="radio"
+              value="abandonware_yes" name="abandonware" class="input-radio"> Hell yeah!</label>
 
               <label>
                 <input id="abandonware_idk" type="radio"
@@ -68,7 +68,7 @@
               <label>
                 <input id="abandonware_no" type="radio"
                 value="abandonware_no" name="abandonware"> Is that food?</label>
-
+              </div>
               <label for="console-side">Choose a side</label>
                   <select class="question-select">
                   <option value="morning" disabled selected>Select an option</option>
@@ -79,6 +79,7 @@
 
             <p>What is your favorite subgenre videogame category?</p>
 
+            <div class="container">
             <label><input id="plataformer" type="checkbox"
               name="plataformer" value="plataformer">Plataformer</label>
             <label><input id="shooter" type="checkbox"
@@ -92,13 +93,13 @@
               name="visual-novel" value="visual-novel"> Visual Novel</label>
             <label><input id="MMORPG" type="checkbox"
               name="MMORPG" value="MMORPG"> MMORPG</label>
-
+            </div>
 
           <label for="comment_area">
-            Last but not least, you are invited to share what is your favorite
+            <p class="spaceOnparagraph">Last but not least, you are invited to share what is your favorite
           abandonware videogame if you have. Also, you are welcomed to share some
           magic and start a videogame story mixing up the features mentioned on
-          previous questions</label>
+          previous questions</p></label>
             <textarea id="comment_area" placeholder="Here goes some magic..."></textarea>
 
           <button type="submit">SUBMIT</button>
