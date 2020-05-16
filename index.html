@@ -10,90 +10,141 @@
 
 <body>
 
-<div id="background-chronocross-img">
-<div id="overlay-color">
 
-  <main>
+  <main class="main-box">
 
     <header>
-      <h1 id="title">Videogames Survey Form</h1>
-      <p id="description-halfOpacity">Thanks for your time! Before leaving, do not forget to check out videogame recommendation!</p>
+      <img id ="img-spacei" src="http://drive.google.com/uc?export=view&id=1rDeABusk-TL4n0zq4PTzKUqM-Fo-GZiN" alt="space invaders">
+    <h1 id="title">Videogames Survey Form</h1>
+      <p id="description-halfOpacity">Thanks for your time! Remember... dojo casino is all in your mind!</p>
     </header>
 
       <div class="form-box">
         <form>
 
+          <div class="form-outerFormat">
           <label id="name-label" for="name">Name</label>
             <input
               type="text"
               id="name"
               name="name"
+              class="form-innerFormat"
               placeholder="Here goes your Name"
               required>
+            </div>
 
-
+          <div class="form-outerFormat">
           <label id="email-label" for="email">Email</label>
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Here goes your Email"
+              class="form-innerFormat"
               required>
+              </div>
 
+          <div class="form-outerFormat">
           <label id="age-label" for="age">Age<span>(optional)</span></label>
             <input
               type="number"
               id="number"
               name="age"
               min="1" max="200"
-              placeholder="How old are you?">
+              placeholder="How old are you?"
+              class="form-innerFormat">
+            </div>
 
+            <div class="form-outerFormat">
             <label for="play-time">What time do you usually play videogames?</label>
+
               <select>
-                <option value="morning" disabled selected>Select an option</option>
-                <option value="morning">Morning</option>
-                <option value="afternoon">Afternoon</option>
-                <option value="night">Morning</option>
+                <option value="morning"
+                  disabled selected>Select an option</option>
+                <option
+                  value="morning">Morning</option>
+                <option
+                  value="afternoon">Afternoon</option>
+                <option
+                  value="night">Morning</option>
               </select>
 
-            <p>Have you ever heard about Abandonware?</p>
-            <div class="container">
-              <label><input id="abandonware_yes" type="radio"
-              value="abandonware_yes" name="abandonware" class="input-radio"> Hell yeah!</label>
-
-              <label>
-                <input id="abandonware_idk" type="radio"
-                value="abandonware_idk"name="abandonware"> Perhaps...</label>
-
-              <label>
-                <input id="abandonware_no" type="radio"
-                value="abandonware_no" name="abandonware"> Is that food?</label>
               </div>
+
+            <p>Have you ever heard about Abandonware?</p>
+            <div class="form-outer">
+              <label>
+              <input
+              type="radio"
+              value="abandonware_yes"
+              name="abandonware"
+              class="input-radio"> Hell yeah!</label>
+
+              <label>
+                <input
+                type="radio"
+                value="abandonware_idk"
+                name="abandonware"
+                class="input-radio"> Perhaps...</label>
+
+              <label>
+                <input
+                type="radio"
+                value="abandonware_no"
+                name="abandonware"
+                class="input-radio"> Is that food?</label>
+              </div>
+
+              <div class="form-outerFormat">
               <label for="console-side">Choose a side</label>
-                  <select class="question-select">
+                  <select>
                   <option value="morning" disabled selected>Select an option</option>
                   <option value="playstation">PlayStation</option>
                   <option value="xbox">Xbox</option>
                   <option value="nintendo">Nintendo</option>
                 </select>
+              </div>
 
             <p>What is your favorite subgenre videogame category?</p>
 
-            <div class="container">
-            <label><input id="plataformer" type="checkbox"
-              name="plataformer" value="plataformer">Plataformer</label>
-            <label><input id="shooter" type="checkbox"
-              name="shooter" value="shooter"> Shooter</label>
-            <label><input id="fighting" type="checkbox"
-              name="fighting" value="fighting"> Fighting</label>
+            <div>
+            <label><input
+              type="checkbox"
+              name="plataformer"
+              value="plataformer"
+              class="input-radio"> Plataformer</label>
 
-            <label><input id="survival" type="checkbox"
-              name="survival" value="survival"> Survival</label>
-            <label><input id="visual-novel" type="checkbox"
-              name="visual-novel" value="visual-novel"> Visual Novel</label>
-            <label><input id="MMORPG" type="checkbox"
-              name="MMORPG" value="MMORPG"> MMORPG</label>
-            </div>
+            <label><input
+              type="checkbox"
+              name="shooter"
+              value="shooter"
+              class="input-radio"> Shooter</label>
+
+            <label><input
+              type="checkbox"
+              name="fighting"
+              value="fighting"
+              class="input-radio"> Fighting</label>
+
+
+            <label><input
+              type="checkbox"
+              name="survival"
+              value="survival"
+              class="input-radio"> Survival</label>
+
+            <label><input
+              type="checkbox"
+              name="visual-novel"
+              value="visual-novel"
+              class="input-radio"> Visual Novel</label>
+
+            <label><input
+              type="checkbox"
+              name="MMORPG"
+              value="MMORPG"
+              class="input-radio"> MMORPG</label>
+
 
           <label for="comment_area">
             <p class="spaceOnparagraph">Last but not least, you are invited to share what is your favorite
@@ -109,6 +160,6 @@
 
     </main>
 
-</div>
-</div>
+
+</body>
 </html>

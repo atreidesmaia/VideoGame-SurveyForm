@@ -10,14 +10,32 @@ https://www.idtech.com/blog/different-types-of-video-game-genres
 https://imgur.com/a/7E4oK#0
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300&display=swap');
 
-@media (min-width: 400px) {
-  .form-box {
-    max-width: 400px;
-  }
+/* Define CSS variables
+--main-color: black;
+Access to CSS variables
+var (--main-color);     */
+
+:root{
+  /*
+  The :root selector matches
+  the document's root element.
+  In HTML, the root element is
+  always the html element. */
+  --color-darkblue_alpha: rgba(62, 94, 122, 0.5);
+  --color-lightblue: rgba(201, 229, 253);
+}
+
+/* https://atzack.com/dawn-css/
+standard boxmodel setp */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html{
@@ -27,30 +45,27 @@ html{
   fontsize 62.5%
   10px = 1 rem */
   /***************/
-  font-family: 'Rokkitt', serif;
-  font-size: 1.25rem;
-  color: white;
-}
-
-body{
-  /***************/
-  /* image will fit to body,
-  margin 0 */
-  /***************/
-  margin: 0;
-  /** scroll x hidden **/
-  overflow-x: hidden;
-}
-
-#background-chronocross-img{
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 200;
+  color: var(--color-lightblue);
   background-image: url(http://drive.google.com/uc?export=view&id=14gTNsRyURqsIDS47e7iCMBEKNbem2uLX);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Div over image so it overlays it */
-#overlay-color{
-  background: rgba(240, 52, 52, 0.2);
+@media screen and (max-width: 500px) {
+  .main-box{
+    width: 400px;
+  }
+}
+
+body{
+  font-size: 1.8rem;
+  text-align: center;
+  /** scroll x hidden **/
+  overflow-x: hidden;
+  weight: 400;
+  margin: 0;
 }
 
 main{
@@ -61,91 +76,78 @@ main{
 }
 
 header{
-  padding: 55px 0;
-  text-align: center;
+  padding: 55px 15px;
+  background-color: var(--color-darkblue_alpha);
 }
 
+label{
+  font-size: 2rem;
+  display: block;
+  padding: 0.2rem;
+}
+
+p{
+  font-size: 2rem;
+}
 /* ***************
         ids
 *************** */
 
 #title{
   font-weight: 700;
+  margin-bottom: 0;
+  font-family: 'Lato';
+  margin: 0;
 }
 
-#description-halfOpacity{
-  display: inline-block; /* background color
-  will adapt to the text line */
-  padding: 30px;
-  text-align:center;
-  background-color:rgba(150, 52, 52, 0.1);
-  border-radius: 15px 50px;
+#img-spacei{
+  width: 25%;
+  height:25%;
   margin: 0;
+  opacity: 0.5;
 }
 
 /* ***************
       Survey
 *************** */
 
+
 .form-box{ /* div class form */
-  background:rgba(192,192,192,0.3) ;
-  border-radius: 0.5rem;
+  background:rgba(192,192,192,0.3);
   text-align: left;
   padding: 30px;
-}
-
-select{
-  font-family: inherit;
-  font-size: inherit;
-  width: 100%;
-  height: 25px;
-}
-
-input[type="text"], input[type="email"], input[type="number"]{
-  box-sizing: border-box;
-  width: 100%;
-  padding: 10px 0 10px 9px;
-  margin: 8px 0 22px 0;
-  border: none;
-  border-radius: 3px;
-  font-family: inherit;
   font-size: inherit;
 }
 
-textarea{
-  font-family: inherit;
-  font-size: inherit;
-  box-sizing: border-box;
-  margin: 0 auto;
-  resize: vertical;
-  height: 100px;
+.form-outerFormat{
+  padding-top: 2rem;
+  height: auto;
 }
 
-textarea, button{
+.form-innerFormat{
   display: block;
   width: 100%;
-}
-
-input{
-  font-size: 0.8rem;
-}
-
-button{
-  background-color: lightblue;
-  border: none;
-  margin: 20px 0;
-  padding: 20px 0;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-
+  height: 3rem;
+  padding: 0.7rem 1rem;
+  margin: 0.2rem 0 0.9rem 0;
 }
 
 .spaceOnparagraph{
-  padding-top: 5px;
+  text-align: justify;
 }
 
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 2.5rem;
+}
 
-/* validation error x 2*/
+select,
+textarea, button {
+  margin-top: 0.2rem;
+  width: 100%;
+  resize: none;
+}
